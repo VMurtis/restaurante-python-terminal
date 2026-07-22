@@ -32,3 +32,11 @@ def escolher_opcao():
         print('Ativar restaurante')
     else: 
         finalizar_app()
+
+def main():
+    exibir_nome_do_programa()
+    exibir_opcoes()
+    escolher_opcao()
+
+if __name__ == '__main__':
+    main()
