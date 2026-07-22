@@ -1,6 +1,9 @@
 import os
 
-restaurantes = ['Bom de Prato', 'Garfo e Faca']
+
+restaurantes = [{'nome':'Praça', 'categoria':'Japonesa', 'ativo':False}, 
+                {'nome':'Pizza Suprema', 'categoria':'Pizza', 'ativo':True},
+                {'nome':'Cantina', 'categoria':'Italiano', 'ativo':False}]
 
 def exibir_nome_do_programa():
     #https://fsymbols.com/all/
