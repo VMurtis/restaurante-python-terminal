@@ -30,9 +30,13 @@ def voltar_ao_menu_principal():
 
 def exibir_subtitulo(texto):
     os.system('cls')
+    linha = '*' * (len(texto))
+    print(linha)
     print(texto)
+    print(linha)
     print()
 
+    
 def opcao_invalida():
     print('Opção inválida!\n')
     input("Digite uma tecla para voltar ao menu principal")
