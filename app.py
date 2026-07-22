@@ -14,10 +14,11 @@ def finalizar_app():
     os.system('cls')
     print('Finalizando o app\n')
 
-print("1. Cadastar restaurante")
-print("2. listar restaurante")
-print("3. Ativar restaurante")
-print("4. sair \n")
+def exibir_opcoes():
+    print('1. Cadastrar restaurante')
+    print('2. Listar restaurantes')
+    print('3. Ativar restaurante')
+    print('4. Sair\n')
 
 opcao_escolhida = int(input("Escolha um opção: "))
 print(f"você escolheu a opção: {opcao_escolhida}")
