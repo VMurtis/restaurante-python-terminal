@@ -33,6 +33,16 @@ def cadastrar_novo_restaurante():
     nome_do_restaurante = input('Digite o nome do restaurante que deseja cadastrar: ')
     restaurantes.append(nome_do_restaurante)
     print(f'O restaurante {nome_do_restaurante} foi cadastrado com sucesso!')
+    main()
+
+def listar_restaurantes():
+    os.system('cls')
+    print('Listando restaurantes')
+    for restaurante in restaurantes:
+        print(f'.{restaurante}')
+
+    input("Digite uma tecla para voltar ao menu principal")
+    main()
 
 def escolher_opcao():
     try:
@@ -41,7 +51,7 @@ def escolher_opcao():
         if opcao_escolhida == 1: 
             cadastrar_novo_restaurante()
         elif opcao_escolhida == 2: 
-            print('Listar restaurantes')
+            listar_restaurantes()
         elif opcao_escolhida == 3: 
             print('Ativar restaurante')
         else: 
