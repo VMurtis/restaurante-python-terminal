@@ -8,6 +8,9 @@ print("""
 ██████╔╝██║░░██║██████╦╝╚█████╔╝██║░░██║  ███████╗██╔╝╚██╗██║░░░░░██║░░██║███████╗██████╔╝██████╔╝
 ╚═════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝░░╚═╝  ╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚═════╝░╚═════╝░\n""")
 
+def finalizar_app():
+    print('Finalizando o app\n')
+
 print("1. Cadastar restaurante")
 print("2. listar restaurante")
 print("3. Ativar restaurante")
@@ -23,4 +26,4 @@ elif opcao_escolhida == 2:
 elif opcao_escolhida == 3: 
     print('Ativar restaurante')
 else:
-    print("Finalizando o app")
+    finalizar_app()
