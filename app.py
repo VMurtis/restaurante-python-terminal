@@ -1,5 +1,7 @@
 import os
 
+restaurantes = ['Bom de Prato', 'Garfo e Faca']
+
 def exibir_nome_do_programa():
     #https://fsymbols.com/all/
     print("""
@@ -25,13 +27,19 @@ def opcao_invalida():
     input("Digite uma tecla para voltar ao menu principal")
     main()
 
+def cadastrar_novo_restaurante():
+    os.system('cls')
+    print('Cadastro de novos restaurantes')
+    nome_do_restaurante = input('Digite o nome do restaurante que deseja cadastrar: ')
+    restaurantes.append(nome_do_restaurante)
+    print(f'O restaurante {nome_do_restaurante} foi cadastrado com sucesso!')
 
 def escolher_opcao():
     try:
         opcao_escolhida = int(input('Escolha uma opção: '))
 
         if opcao_escolhida == 1: 
-            print('Cadastrar restaurante')
+            cadastrar_novo_restaurante()
         elif opcao_escolhida == 2: 
             print('Listar restaurantes')
         elif opcao_escolhida == 3: 
@@ -41,7 +49,7 @@ def escolher_opcao():
     except:
         opcao_invalida()
 
-        
+
 def main():
     exibir_nome_do_programa()
     exibir_opcoes()
